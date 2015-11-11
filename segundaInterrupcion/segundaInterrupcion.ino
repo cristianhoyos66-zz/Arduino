@@ -1,4 +1,4 @@
-int counter = 0;
+int counter = -1;
 
 //para display de catodo comun que se prende con unos
 byte Digit[10][7] =                
@@ -35,7 +35,6 @@ void setup () {
     pinMode(i, OUTPUT);
    }
    attachInterrupt(0, sum, FALLING);
-   Display(0);
 }
 
 void loop () {
